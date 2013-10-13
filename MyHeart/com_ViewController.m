@@ -13,15 +13,13 @@
 @end
 
 @implementation com_ViewController
-@synthesize resultText;
-@synthesize iFlyRecongnizerView;
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
         NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@",APPID ];
-        iFlyRecongnizerView = [[IFlyRecognizerView alloc] initWithOrigin:CGPointMake(15, 60) initParam:initString];
-        iFlyRecongnizerView.delegate = self;
+        _iFlyRecongnizerView = [[IFlyRecognizerView alloc] initWithOrigin:CGPointMake(15, 60) initParam:initString];
+        _iFlyRecongnizerView.delegate = self;
     }
     return self;
 }
@@ -63,11 +61,11 @@
 
 - (IBAction)start:(id)sender {
     self.resultText.text = nil;
-    [iFlyRecongnizerView setParameter:@"grammarID" value:_grammarID];
-    [iFlyRecongnizerView setParameter:@"domain" value:@"iat"];
-    [iFlyRecongnizerView setParameter:@"sample_rate" value:@"16000"];
-    [iFlyRecongnizerView setParameter:@"vad_eos" value:@"1800"];
-    [iFlyRecongnizerView setParameter:@"vad_bos" value:@"6000"];
-    [iFlyRecongnizerView start];
+    [_iFlyRecongnizerView setParameter:@"grammarID" value:_grammarID];
+    [_iFlyRecongnizerView setParameter:@"domain" value:@"iat"];
+    [_iFlyRecongnizerView setParameter:@"sample_rate" value:@"16000"];
+    [_iFlyRecongnizerView setParameter:@"vad_eos" value:@"1800"];
+    [_iFlyRecongnizerView setParameter:@"vad_bos" value:@"6000"];
+    [_iFlyRecongnizerView start];
 }
 @end

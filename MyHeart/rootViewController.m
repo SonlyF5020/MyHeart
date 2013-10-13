@@ -13,9 +13,6 @@
 @end
 
 @implementation rootViewController
-@synthesize iFlyRecongnizerView;
-@synthesize iFlySynthesizerView;
-@synthesize speakButton;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,10 +28,10 @@
     if (self) {
         self.title = @"心声";
         NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@",APPID ];
-        iFlyRecongnizerView = [[IFlyRecognizerView alloc] initWithOrigin:CGPointMake(15, 60) initParam:initString];
-        iFlyRecongnizerView.delegate = self;
-        iFlySynthesizerView = [[IFlySynthesizerView alloc] initWithOrigin:CGPointMake(10, 60) params:initString];
-        iFlySynthesizerView.delegate = self;
+        _iFlyRecongnizerView = [[IFlyRecognizerView alloc] initWithOrigin:CGPointMake(15, 60) initParam:initString];
+        _iFlyRecongnizerView.delegate = self;
+        _iFlySynthesizerView = [[IFlySynthesizerView alloc] initWithOrigin:CGPointMake(10, 60) params:initString];
+        _iFlySynthesizerView.delegate = self;
         // Custom initialization
     }
     return self;
@@ -97,7 +94,7 @@
 
 - (void) onEnd:(IFlySynthesizerView *)iFlySynthesizerView error:(IFlySpeechError *)error
 {
-    speakButton.enabled = YES;
+    _speakButton.enabled = YES;
 }
 
 - (void) onPlayProress:(IFlySynthesizerView *)iFlySynthesizerView progress:(int)progress
@@ -172,7 +169,7 @@
 
 - (IBAction)readStart:(UIButton*)sender {
     sender.enabled = NO;
-    [iFlySynthesizerView startSpeaking:_mainText.text];
+    [_iFlySynthesizerView startSpeaking:_mainText.text];
 }
 
 - (IBAction)seeUseWords:(id)sender {
@@ -181,12 +178,12 @@
 
 - (IBAction)start:(id)sender {
     self.mainText.text = nil;
-    [iFlyRecongnizerView setParameter:@"grammarID" value:_grammarID];
-    [iFlyRecongnizerView setParameter:@"domain" value:@"iat"];
-    [iFlyRecongnizerView setParameter:@"sample_rate" value:@"16000"];
-    [iFlyRecongnizerView setParameter:@"vad_eos" value:@"1800"];
-    [iFlyRecongnizerView setParameter:@"vad_bos" value:@"6000"];
-    [iFlyRecongnizerView start];
+    [_iFlyRecongnizerView setParameter:@"grammarID" value:_grammarID];
+    [_iFlyRecongnizerView setParameter:@"domain" value:@"iat"];
+    [_iFlyRecongnizerView setParameter:@"sample_rate" value:@"16000"];
+    [_iFlyRecongnizerView setParameter:@"vad_eos" value:@"1800"];
+    [_iFlyRecongnizerView setParameter:@"vad_bos" value:@"6000"];
+    [_iFlyRecongnizerView start];
 }
 
 - (IBAction)cleanMainText:(id)sender {

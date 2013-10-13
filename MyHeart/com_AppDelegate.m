@@ -14,14 +14,10 @@
 @end
 
 @implementation com_AppDelegate
-@synthesize list;
-@synthesize managedObjectContext = __managedObjectContext;
-@synthesize managedObjectModel = __managedObjectModel;
-@synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    list = [[NSMutableArray alloc] init];
+    _list = [[NSMutableArray alloc] init];
     NSManagedObjectContext *context = [self managedObjectContext];
     NSError *error;
     // Override point for customization after application launch.
@@ -32,9 +28,9 @@
     NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
     for (NSManagedObject *info in fetchedObjects) {
         NSString *content = [info valueForKey:@"content"];
-        [list addObject:content];
+        [_list addObject:content];
     }
-    NSLog(@"after lunch count = %d", [list count]);
+    NSLog(@"after lunch count = %d", [_list count]);
     return YES;
 }
 							
@@ -60,11 +56,11 @@
     NSError *saveError = nil;
     [context save:&saveError];
   
-    for (NSString *content in list) {
+    for (NSString *content in _list) {
         NSManagedObject *object = [NSEntityDescription insertNewObjectForEntityForName:@"UsefulWords" inManagedObjectContext:context];
         [object setValue:content forKey:@"content"];
     }
-    NSLog(@"go to background count = %d", [list count]);
+    NSLog(@"go to background count = %d", [_list count]);
     if (![context save:&error]) {
         NSLog(@"couldn't save: %@", [error localizedDescription]);
     }
@@ -89,16 +85,16 @@
 
 //list handler
 - (void)insertObject:(id)obj inListAtIndex:(NSUInteger)theIndex {
-    [list insertObject:obj atIndex:theIndex];
+    [_list insertObject:obj atIndex:theIndex];
 }
 - (void)removeObjectFromListAtIndex:(NSUInteger)theIndex {
-    [list removeObjectAtIndex:theIndex];
+    [_list removeObjectAtIndex:theIndex];
 }
 -(NSMutableArray *)getDataList{
-    return list;
+    return _list;
 }
 - (NSUInteger)countOfList {
-    return [list count];
+    return [_list count];
 }
 
 
@@ -106,39 +102,39 @@
 
 - (NSManagedObjectContext *)managedObjectContext
 {
-    if (__managedObjectContext != nil) {
-        return __managedObjectContext;
+    if (_managedObjectContext != nil) {
+        return _managedObjectContext;
     }
     
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
-        __managedObjectContext = [[NSManagedObjectContext alloc] init];
-        [__managedObjectContext setPersistentStoreCoordinator:coordinator];
+        _managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     }
-    return __managedObjectContext;
+    return _managedObjectContext;
 }
 
 - (NSManagedObjectModel *)managedObjectModel
 {
-    if (__managedObjectModel != nil) {
-        return __managedObjectModel;
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
     }
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"useWordsStoreModel" withExtension:@"momd"];
-    __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-    return __managedObjectModel;
+    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    return _managedObjectModel;
 }
 
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
 {
-    if (__persistentStoreCoordinator != nil) {
-        return __persistentStoreCoordinator;
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
     }
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"useWordsStoreModel.sqlite"];
     
     NSError *error = nil;
-    __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
          
@@ -166,7 +162,7 @@
         abort();
     }
     
-    return __persistentStoreCoordinator;
+    return _persistentStoreCoordinator;
 }
 
 #pragma mark - Application's Documents directory

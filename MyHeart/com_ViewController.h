@@ -13,7 +13,7 @@
 #define APPID    @"523e8a23"
 
 @interface com_ViewController : UIViewController<IFlyRecognizerViewDelegate>
-@property (weak, nonatomic) IBOutlet UITextView *resultText;
+@property (strong, nonatomic) IBOutlet UITextView *resultText;
 @property NSString *grammarID;
 @property NSString *ent;
 @property IFlyRecognizerView *iFlyRecongnizerView;

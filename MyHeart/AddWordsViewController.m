@@ -14,7 +14,6 @@
 @end
 
 @implementation AddWordsViewController
-@synthesize addTextView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -120,7 +119,7 @@
 
 - (IBAction)saveAddedWords:(id)sender {
     com_AppDelegate *controller = [UIApplication sharedApplication].delegate;
-    [controller insertObject:addTextView.text inListAtIndex:[controller countOfList]];
+    [controller insertObject:_addTextView.text inListAtIndex:[controller countOfList]];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

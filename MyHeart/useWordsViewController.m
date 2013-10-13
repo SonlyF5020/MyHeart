@@ -14,8 +14,6 @@
 @end
 
 @implementation useWordsViewController
-@synthesize dataItems;
-@synthesize rootDelegate;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,7 +28,7 @@
 {
     [super viewDidLoad];
     com_AppDelegate *controller = [UIApplication sharedApplication].delegate;
-    dataItems = [controller getDataList];
+    _dataItems = [controller getDataList];
     
     UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc]
                                           initWithTarget:self action:@selector(handleLongPress:)];
@@ -62,7 +60,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [dataItems count];
+    return [_dataItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -70,7 +68,7 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     NSInteger row = [indexPath row];
-    cell.textLabel.text = [dataItems objectAtIndex:row];
+    cell.textLabel.text = [_dataItems objectAtIndex:row];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
     // Configure the cell...
     
@@ -128,7 +126,7 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
     UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
-    [rootDelegate passValue:cell.textLabel.text];
+    [_rootDelegate passValue:cell.textLabel.text];
     NSLog(@"%@",cell.textLabel.text);
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
@@ -151,7 +149,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [dataItems removeObjectAtIndex:indexPath.row];
+        [_dataItems removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }

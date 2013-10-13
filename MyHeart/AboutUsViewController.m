@@ -14,7 +14,6 @@
 @end
 
 @implementation AboutUsViewController
-@synthesize data;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -29,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    data = [[NSArray alloc] initWithObjects:@"关于我们",@"意见反馈", nil];
+    _data = [[NSArray alloc] initWithObjects:@"关于我们",@"意见反馈", nil];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -62,7 +61,7 @@
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = [data objectAtIndex:indexPath.row];
+    cell.textLabel.text = [_data objectAtIndex:indexPath.row];
     
     // Configure the cell...
     
