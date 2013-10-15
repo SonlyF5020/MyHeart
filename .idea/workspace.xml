@@ -12,6 +12,7 @@
     <file path="/com_ViewController.m" changelist="07a5b196-9abe-43d7-a46f-6b1ffaf7e78a" time="1381670569643" ignored="false" />
     <file path="/com_ViewController.h" changelist="07a5b196-9abe-43d7-a46f-6b1ffaf7e78a" time="1381670548467" ignored="false" />
     <file path="/com_AppDelegate.h" changelist="07a5b196-9abe-43d7-a46f-6b1ffaf7e78a" time="1381670606790" ignored="false" />
+    <file path="$PROJECT_DIR$/MyHeart/com_ViewController.h" changelist="07a5b196-9abe-43d7-a46f-6b1ffaf7e78a" time="1381797228634" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,44 +32,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="useWordsViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyHeart/useWordsViewController.h">
+      <file leaf-file-name="AboutUsViewController.h" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyHeart/AboutUsViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="13" column="9" selection-start="220" selection-end="220" vertical-scroll-proportion="0.43141592">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="com_AppDelegate.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MyHeart/com_AppDelegate.m">
+      <file leaf-file-name="AboutUsViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyHeart/AboutUsViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="31" selection-start="313" selection-end="313" vertical-scroll-proportion="0.3115727">
+            <state line="54" column="1" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="useWordsViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyHeart/useWordsViewController.m">
+      <file leaf-file-name="AddWordsViewController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyHeart/AddWordsViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="87" selection-start="4026" selection-end="4026" vertical-scroll-proportion="-72.11539">
+            <state line="12" column="11" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="textCell.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyHeart/textCell.m">
+      <file leaf-file-name="AddWordsViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyHeart/AddWordsViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="117" column="1" selection-start="3404" selection-end="3404" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rootViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyHeart/rootViewController.h">
+      <file leaf-file-name="textCell.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyHeart/textCell.h">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -85,17 +86,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddWordsViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyHeart/AddWordsViewController.m">
+      <file leaf-file-name="rootViewController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyHeart/rootViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="59" selection-start="3404" selection-end="3404" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="19" column="11" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#129#152#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddWordsViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyHeart/AddWordsViewController.h">
+      <file leaf-file-name="textCell.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyHeart/textCell.m">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -103,19 +106,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutUsViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyHeart/AboutUsViewController.m">
+      <file leaf-file-name="useWordsViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyHeart/useWordsViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="55" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0">
+            <state line="15" column="25" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="com_AppDelegate.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyHeart/com_AppDelegate.h">
+      <file leaf-file-name="useWordsViewController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyHeart/useWordsViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+            <state line="18" column="0" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,11 +137,14 @@
         <option value="$PROJECT_DIR$/MyHeart/AboutUsViewController.m" />
         <option value="$PROJECT_DIR$/MyHeart/AddWordsViewController.m" />
         <option value="$PROJECT_DIR$/MyHeart/rootViewController.m" />
-        <option value="$PROJECT_DIR$/MyHeart/useWordsViewController.m" />
         <option value="$PROJECT_DIR$/MyHeart/com_ViewController.h" />
-        <option value="$PROJECT_DIR$/MyHeart/com_ViewController.m" />
-        <option value="$PROJECT_DIR$/MyHeart/com_AppDelegate.h" />
         <option value="$PROJECT_DIR$/MyHeart/com_AppDelegate.m" />
+        <option value="$PROJECT_DIR$/MyHeart/useWordsViewController.h" />
+        <option value="$PROJECT_DIR$/MyHeart/com_ViewController.m" />
+        <option value="$PROJECT_DIR$/MyHeart/useWordsViewController.m" />
+        <option value="$PROJECT_DIR$/MyHeart/rootViewController.h" />
+        <option value="$PROJECT_DIR$/MyHeart/com_AppDelegate.h" />
+        <option value="$PROJECT_DIR$/MyHeart/AddWordsViewController.h" />
       </list>
     </option>
   </component>
@@ -174,7 +180,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,7 +202,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MyHeart" />
+              <option name="myItemId" value="Products" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -211,12 +216,13 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Frameworks" />
+              <option name="myItemId" value="MyHeart" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="DirectoryView.Xcode" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,8 +257,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32867134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982105" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982105" sideWeight="0.67132866" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -261,7 +268,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -328,20 +334,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MyHeart/com_ViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyHeart/com_ViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyHeart/com_AppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -356,14 +348,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyHeart/useWordsViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="87" selection-start="4026" selection-end="4026" vertical-scroll-proportion="-72.11539">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyHeart/useWordsViewController.h">
+    <entry file="file://$PROJECT_DIR$/MyHeart/textCell.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -377,17 +362,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyHeart/AboutUsViewController.m">
+    <entry file="file://$PROJECT_DIR$/MyHeart/useWordsViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="55" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0">
+        <state line="15" column="25" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyHeart/useWordsViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyHeart/rootViewController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="19" column="11" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#129#152#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -398,44 +392,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyHeart/AddWordsViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyHeart/AddWordsViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="59" selection-start="3404" selection-end="3404" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyHeart/com_ViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="9" selection-start="908" selection-end="908" vertical-scroll-proportion="0.17030568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyHeart/com_ViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="61" selection-start="398" selection-end="408" vertical-scroll-proportion="0.2838428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyHeart/com_AppDelegate.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+        <state line="12" column="11" selection-start="228" selection-end="228" vertical-scroll-proportion="0.30309734">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyHeart/com_AppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="313" selection-end="313" vertical-scroll-proportion="0.3115727">
+        <state line="22" column="66" selection-start="621" selection-end="621" vertical-scroll-proportion="0.71753985">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyHeart/AddWordsViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyHeart/AddWordsViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="1" selection-start="3404" selection-end="3404" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyHeart/AboutUsViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="1" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyHeart/AboutUsViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="9" selection-start="220" selection-end="220" vertical-scroll-proportion="0.43141592">
           <folding />
         </state>
       </provider>

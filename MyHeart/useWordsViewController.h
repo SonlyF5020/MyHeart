@@ -12,8 +12,7 @@
 @end
 
 @interface useWordsViewController : UITableViewController<UIGestureRecognizerDelegate>
-- (IBAction)startEdit:(id)sender;
 - (IBAction)openAddPage:(UIBarButtonItem *)sender;
-@property (strong, nonatomic) IBOutlet UITableView *tableViewList;
+@property (nonatomic) IBOutlet UITableView *tableViewList;
 @property NSMutableArray *dataItems;
 @end

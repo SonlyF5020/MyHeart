@@ -10,7 +10,7 @@
 #import "com_AppDelegate.h"
 
 @interface useWordsViewController ()
-@property(weak) id rootDelegate;
+@property id rootDelegate;
 @end
 
 @implementation useWordsViewController
@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    com_AppDelegate *controller = [UIApplication sharedApplication].delegate;
+    com_AppDelegate *controller = (com_AppDelegate *) [UIApplication sharedApplication].delegate;
     _dataItems = [controller getDataList];
     
     UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc]
@@ -68,7 +68,7 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     NSInteger row = [indexPath row];
-    cell.textLabel.text = [_dataItems objectAtIndex:row];
+    cell.textLabel.text = [_dataItems objectAtIndex:(NSUInteger) row];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
     // Configure the cell...
     
@@ -133,11 +133,6 @@
 
 //from IOS documents
 
-- (IBAction)startEdit:(id)sender {
-    [super setEditing:YES animated:YES];
-    [self.tableView setEditing:YES animated:YES];
-}
-
 - (IBAction)openAddPage:(UIBarButtonItem *)sender {
     [self performSegueWithIdentifier:@"addPage" sender:self];
 }
@@ -149,7 +144,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_dataItems removeObjectAtIndex:indexPath.row];
+        [_dataItems removeObjectAtIndex:(NSUInteger) indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }

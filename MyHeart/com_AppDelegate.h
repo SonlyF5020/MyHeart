@@ -10,11 +10,11 @@
 
 @interface com_AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) UIWindow *window;
 
-@property (readwrite, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readwrite, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readwrite, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (readwrite, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readwrite, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readwrite, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 - (void)insertObject:(id)obj inListAtIndex:(NSUInteger)theIndex ;
 

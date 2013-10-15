@@ -28,7 +28,6 @@
 		493D434A17F265CB0047893D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 493D434917F265CB0047893D /* Default@2x.png */; };
 		493D434C17F265CB0047893D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 493D434B17F265CB0047893D /* Default-568h@2x.png */; };
 		493D434F17F265CB0047893D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493D434D17F265CB0047893D /* MainStoryboard.storyboard */; };
-		493D435217F265CB0047893D /* com_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D435117F265CB0047893D /* com_ViewController.m */; };
 		493D435917F26CED0047893D /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493D435817F26CED0047893D /* iflyMSC.framework */; };
 		493D435B17F2738A0047893D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493D435A17F2738A0047893D /* AdSupport.framework */; };
 		493D435D17F2739E0047893D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493D435C17F2739E0047893D /* QuartzCore.framework */; };
@@ -75,8 +74,6 @@
 		493D434917F265CB0047893D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		493D434B17F265CB0047893D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		493D434E17F265CB0047893D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		493D435017F265CB0047893D /* com_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = com_ViewController.h; sourceTree = "<group>"; };
-		493D435117F265CB0047893D /* com_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_ViewController.m; sourceTree = "<group>"; };
 		493D435817F26CED0047893D /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = ../../iphone_ui_1.042_523e8a23/lib/iflyMSC.framework; sourceTree = "<group>"; };
 		493D435A17F2738A0047893D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		493D435C17F2739E0047893D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -180,8 +177,6 @@
 				493D434417F265CB0047893D /* com_AppDelegate.h */,
 				493D434517F265CB0047893D /* com_AppDelegate.m */,
 				493D434D17F265CB0047893D /* MainStoryboard.storyboard */,
-				493D435017F265CB0047893D /* com_ViewController.h */,
-				493D435117F265CB0047893D /* com_ViewController.m */,
 				493D433C17F265CB0047893D /* Supporting Files */,
 				4963328617F6B58500283CC8 /* rootViewController.h */,
 				4963328717F6B58500283CC8 /* rootViewController.m */,
@@ -296,7 +291,6 @@
 			files = (
 				493D434217F265CB0047893D /* main.m in Sources */,
 				493D434617F265CB0047893D /* com_AppDelegate.m in Sources */,
-				493D435217F265CB0047893D /* com_ViewController.m in Sources */,
 				4963328817F6B58500283CC8 /* rootViewController.m in Sources */,
 				492A648B17F6F92300A42652 /* textCell.m in Sources */,
 				492A649917F7017700A42652 /* useWordsViewController.m in Sources */,

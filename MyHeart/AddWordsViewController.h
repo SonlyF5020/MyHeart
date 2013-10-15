@@ -10,6 +10,6 @@
 
 @interface AddWordsViewController : UITableViewController
 - (IBAction)saveAddedWords:(id)sender;
-@property (weak, nonatomic) IBOutlet UITextView *addTextView;
+@property (nonatomic) IBOutlet UITextView *addTextView;
 
 @end
